@@ -3,6 +3,6 @@
 **Course Code:** COM-511  
 **Course:** Network Security Lab  
 **Program:** B.Tech CSE (Cyber Security)  
-**Institute:** MIET (Autonomous), Jammu
+**Institute:** MIET, Jammu
 
 This repository contains the laboratory work for the Network Security Lab.
