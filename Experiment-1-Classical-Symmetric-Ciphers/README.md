@@ -1,5 +1,4 @@
-# Experiment 1: Implement and Analyze Classical Symmetric Ciphers
-# Experiment 01 – Caesar Cipher and Vigenère Cipher
+# Experiment 1: Implement and Analyze Classical Symmetric Cipher
 
 ## Aim
 
