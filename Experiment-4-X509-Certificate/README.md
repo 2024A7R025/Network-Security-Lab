@@ -4,7 +4,7 @@
 
 To create a self-signed X.509 digital certificate, examine its information, and verify it using OpenSSL.
 
-## Context/Theory
+## Theory
 
 An X.509 certificate contains information about an entity and its public key. A self-signed certificate is created and signed using its own private key and is commonly used for testing and local development.
 
