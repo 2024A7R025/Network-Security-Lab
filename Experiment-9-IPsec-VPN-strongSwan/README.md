@@ -32,19 +32,19 @@ To configure a two-host IKEv2 tunnel, test protected traffic, and analyze the ou
 
 Two Kali Linux virtual machines are configured as Gateway A and Gateway B. Their outer IP addresses are assigned as `192.168.229.128` and `192.168.229.129`, respectively. The inner tunnel addresses `10.10.1.1/32` and `10.20.1.1/32` are assigned to the respective gateways using the loopback interface.
 
-![IP Addressing of Both Gateways](Outputs/ss1.png)
+![IP Addressing of Both Gateways](outputs/ss1.png)
 
 ### Step 2: Verify Outer Network Connectivity
 
 The outer network connectivity between both gateways is verified using ping requests. This ensures that the gateways can communicate before establishing the IPsec tunnel.
 
-![Outer Network Connectivity](Outputs/ss2.png)
+![Outer Network Connectivity](outputs/ss2.png)
 
 ### Step 3: Verify Loaded strongSwan Configuration
 
 The strongSwan configuration is loaded and checked using the `swanctl` utility. The configured IKEv2 connection, peer identities, tunnel selectors, and authentication settings are verified on both gateways.
 
-![Loaded strongSwan Configuration](Outputs/ss3.png)
+![Loaded strongSwan Configuration](outputs/ss3.png)
 
 ### Step 4: Verify Established IKE SA and CHILD SA
 
@@ -54,7 +54,7 @@ The IPsec connection is initiated from Gateway A. The IKE Security Association (
 
 The output confirms the established VPN connection and negotiated security parameters.
 
-![Established IKE SA and CHILD SA](Outputs/ss4.png)
+![Established IKE SA and CHILD SA](outputs/ss4.png)
 
 ### Step 5: Verify IPsec XFRM States
 
@@ -64,7 +64,7 @@ The installed IPsec security states are inspected using:
 
 The output displays the Security Parameter Index (SPI), encryption algorithm, and other parameters associated with the IPsec tunnel.
 
-![IPsec XFRM States](Outputs/ss5.png)
+![IPsec XFRM States](outputs/ss5.png)
 
 ### Step 6: Verify IPsec XFRM Policies
 
@@ -74,7 +74,7 @@ The installed IPsec policies are inspected using:
 
 These policies specify which traffic is protected by the IPsec tunnel and the security processing applied to matching packets.
 
-![IPsec XFRM Policies](Outputs/ss6.png)
+![IPsec XFRM Policies](outputs/ss6.png)
 
 ### Step 7: Verify Protected Traffic Through the IPsec Tunnel
 
@@ -84,13 +84,13 @@ Protected communication is tested by sending inner-network ping requests using:
 
 The successful replies demonstrate communication between the inner tunnel addresses through the IPsec VPN.
 
-![Protected Traffic Through IPsec Tunnel](Outputs/ss7.png)
+![Protected Traffic Through IPsec Tunnel](outputs/ss7.png)
 
 ### Step 8: Verify IPsec Traffic Counters
 
 The IPsec Security Association traffic counters are inspected to verify the number of packets and bytes transferred through the tunnel in both directions. Increasing counters confirm that traffic is being processed by IPsec.
 
-![IPsec Traffic Counters](Outputs/ss8.png)
+![IPsec Traffic Counters](outputs/ss8.png)
 
 ## 5. Improvement
 
@@ -99,7 +99,7 @@ A pre-shared key authentication test was performed by temporarily configuring an
 ## 6. Files Included
 
 - [Commands.sh](Codes/Commands.sh): Contains the commands used during the experiment along with their descriptions.
-- **Outputs/ss1.png – ss8.png:** Screenshots documenting IP addressing, connectivity, configuration verification, tunnel establishment, IPsec states and policies, protected traffic, and traffic counters.
+- **outputs/ss1.png – outputs/ss8.png:** Screenshots documenting IP addressing, connectivity, configuration verification, tunnel establishment, IPsec states and policies, protected traffic, and traffic counters.
 
 ## 7. Result
 
