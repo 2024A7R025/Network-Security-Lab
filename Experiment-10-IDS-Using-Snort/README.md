@@ -70,7 +70,7 @@ The pfSense console was opened to examine the configured network interfaces.
 
 The WAN and LAN interface IP addresses were identified and verified to understand the network configuration used during the experiment.
 
-![Step 1: pfSense WAN and LAN interface configuration](Outputs/ss1.png)
+![Step 1: pfSense WAN and LAN interface configuration](outputs/ss1.png)
 
 ---
 
@@ -82,7 +82,7 @@ Network connectivity was tested using the ping command to verify communication w
 
 An Nmap scan was also performed against the authorized lab target to generate network traffic for intrusion detection testing.
 
-![Step 2: Kali Linux network configuration, ping and Nmap scan](Outputs/ss2.png)
+![Step 2: Kali Linux network configuration, ping and Nmap scan](outputs/ss2.png)
 
 ---
 
@@ -92,7 +92,7 @@ The LAN firewall rules were opened in the pfSense web interface.
 
 The configured rules were examined to understand how network traffic was allowed or blocked within the lab environment.
 
-![Step 3: pfSense LAN firewall rules](Outputs/ss3.png)
+![Step 3: pfSense LAN firewall rules](outputs/ss3.png)
 
 ---
 
@@ -104,7 +104,7 @@ Snort was enabled on the LAN interface so that it could monitor network traffic 
 
 The interface configuration was examined to verify that Snort was enabled.
 
-![Step 4: Snort enabled on the LAN interface](Outputs/ss4.png)
+![Step 4: Snort enabled on the LAN interface](outputs/ss4.png)
 
 ---
 
@@ -116,7 +116,7 @@ Ping requests and an Nmap scan were performed against the authorized lab target 
 
 These activities were used to examine how the intrusion detection system identifies and records network events.
 
-![Step 5: Kali Linux ping and Nmap scan results](Outputs/ss5.png)
+![Step 5: Kali Linux ping and Nmap scan results](outputs/ss5.png)
 
 ---
 
@@ -128,7 +128,7 @@ The generated alerts were examined to identify detected network activities, incl
 
 The alert information demonstrated how Snort records monitored traffic events for security analysis.
 
-![Step 6: Snort alerts showing detected ICMP ping events](Outputs/ss6.png)
+![Step 6: Snort alerts showing detected ICMP ping events](outputs/ss6.png)
 
 ---
 
